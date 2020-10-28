@@ -67,11 +67,49 @@ header {
     padding: 20px 20px;
 }
 
+#firstDropDown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#firstDropDown ul li {
+    padding: 20px 0;
+}
+
+.dropdownAbb ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownAbb ul li {
+    padding: 20px 0;
+}
+
+.dropdownChiSiamo ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownChiSiamo ul li {
+    padding: 20px 0;
+}
+
+.dropdownAiuto ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownAiuto ul li {
+    padding: 20px 0;
+}
+
 /*dropdown*/
 
 .dropdownFunz {
     width: 60%;
-    height: 300px;
     background-color: red;
     position: absolute;
     top: 80px;
@@ -98,8 +136,7 @@ header {
 }
 
 .dropdownChiSiamo {
-    width: 11%;
-    height: 250px;
+    width: 10%;
     background-color: green;
     position: absolute;
     top: 80px;
@@ -112,8 +149,7 @@ header {
 }
 
 .dropdownAiuto {
-    width: 11%;
-    height: 250px;
+    width: 10%;
     background-color: yellow;
     position: absolute;
     top: 80px;
