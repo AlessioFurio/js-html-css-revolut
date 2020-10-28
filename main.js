@@ -52,7 +52,7 @@ $(document).ready(function(){
                     $('.dropdownFunz').addClass('show');
                     });
 
-            $('.dropdownFunz').mouseleave(function(){
+            $('.headerRight ul li').mouseleave(function(){
             $('.dropdownFunz').removeClass('show');
                     });
                 }
@@ -62,7 +62,7 @@ $(document).ready(function(){
                     $('.dropdownAbb').addClass('show');
                     });
 
-            $('.dropdownAbb').mouseleave(function(){
+            $('.headerRight ul li').mouseleave(function(){
             $('.dropdownAbb').removeClass('show');
                     });
 
@@ -72,7 +72,7 @@ $(document).ready(function(){
                     $('.dropdownChiSiamo').addClass('show');
                     });
 
-                    $('.dropdownChiSiamo').mouseleave(function(){
+                    $('.headerRight ul li').mouseleave(function(){
                     $('.dropdownChiSiamo').removeClass('show');
                             });
 
@@ -82,12 +82,14 @@ $(document).ready(function(){
                     $('.dropdownAiuto').addClass('show');
                     });
 
-                    $('.dropdownAiuto').mouseleave(function(){
+                    $('.headerRight ul li').mouseleave(function(){
                     $('.dropdownAiuto').removeClass('show');
                             });
         }
 
     });
+
+
 
 
 
