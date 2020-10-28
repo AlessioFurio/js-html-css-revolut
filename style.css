@@ -52,7 +52,7 @@ header {
 
 
 .headerRight {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -127,7 +127,7 @@ header {
     background-color: blue;
     position: absolute;
     top: 80px;
-    left: 860px;
+    left: 780px;
     display: none;
 }
 
@@ -140,7 +140,7 @@ header {
     background-color: green;
     position: absolute;
     top: 80px;
-    left: 999px;
+    left: 940px;
     display: none;
 }
 
@@ -153,10 +153,42 @@ header {
     background-color: yellow;
     position: absolute;
     top: 80px;
-    left: 1122px;
+    left: 1000px;
     display: none;
 }
 
 .dropdownAiuto.show {
     display: block;
+}
+
+.accediBTN {
+    border: none;
+    border-radius: 12px;
+    padding: 7px;
+    background: rgba(25, 28, 31, 0.133);
+    color: #000;
+    cursor: pointer;
+}
+
+.scaricaBTN {
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    background: rgb(25, 28, 31);
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+    .headerRight ul li a {
+        padding: 20px 10px;
+    }
+
+    .accediBTN {
+        padding: 4px;
+    }
+    .scaricaBTN {
+        padding: 10px;
+    }
 }

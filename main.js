@@ -51,10 +51,18 @@ $(document).ready(function(){
             $('#funz').mouseenter(function(){
                     $('.dropdownFunz').addClass('show');
                     });
+            $('.dropdownFunz').mouseenter(function(){
+                    $('.dropdownFunz').addClass('show');
+                    });
 
             $('.headerRight ul li').mouseleave(function(){
-            $('.dropdownFunz').removeClass('show');
+                    $('.dropdownFunz').removeClass('show');
                     });
+
+            $('.dropdownFunz').mouseleave(function(){
+                    $('.dropdownFunz').removeClass('show');
+                    });
+
                 }
 
         else if (indice == 2) {
@@ -62,8 +70,16 @@ $(document).ready(function(){
                     $('.dropdownAbb').addClass('show');
                     });
 
+            $('.dropdownAbb').mouseenter(function(){
+                    $('.dropdownAbb').addClass('show');
+                    });
+
             $('.headerRight ul li').mouseleave(function(){
-            $('.dropdownAbb').removeClass('show');
+                    $('.dropdownAbb').removeClass('show');
+                    });
+
+            $('.dropdownAbb').mouseleave(function(){
+                    $('.dropdownAbb').removeClass('show');
                     });
 
         }
@@ -72,8 +88,15 @@ $(document).ready(function(){
                     $('.dropdownChiSiamo').addClass('show');
                     });
 
+            $('.dropdownChiSiamo').mouseenter(function(){
+                    $('.dropdownChiSiamo').addClass('show');
+                    });
+
                     $('.headerRight ul li').mouseleave(function(){
                     $('.dropdownChiSiamo').removeClass('show');
+                            });
+                    $('.dropdownChiSiamo').mouseleave(function(){
+                            $('.dropdownChiSiamo').removeClass('show');
                             });
 
         }
@@ -82,8 +105,16 @@ $(document).ready(function(){
                     $('.dropdownAiuto').addClass('show');
                     });
 
+            $('.dropdownAiuto').mouseenter(function(){
+                    $('.dropdownAiuto').addClass('show');
+                    });
+
                     $('.headerRight ul li').mouseleave(function(){
                     $('.dropdownAiuto').removeClass('show');
+                            });
+
+                    $('.dropdownAiuto').mouseleave(function(){
+                            $('.dropdownAiuto').removeClass('show');
                             });
         }
 
