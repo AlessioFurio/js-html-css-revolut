@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,29 +14,26 @@ a {
     color: #000;
 }
 
-header {
-    width: 100%;
-    height: 100px;
-    position: relative;
-
-}
-
 .container {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
+    max-width: 1380px;
     margin: auto;
 }
 
-/*HEADER LEFT*/
+.container::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
 
 .headerLeft {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    width: 30%;
+    float: left;
+    height: 100px;
 }
 
 .logo {
@@ -44,151 +41,94 @@ header {
     height: 30px;
 }
 
-.logo img {
+.logo a img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+.headerLeft > ul, .headerRight > ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.headerLeft > ul li, .headerRight > ul li {
+    padding: 0 12px;
+}
 
 .headerRight {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 70%;
+    float: left;
+    height: 100px;
 }
 
-.headerRight ul li {
+.headerRight > ul {
+    justify-content: flex-end;
+}
+
+.dropdownItem {
+    position: relative;
+}
+
+.dropdownItem > a {
     display: inline-block;
+    height: 100px;
+    line-height: 100px;
 }
 
-.headerRight ul li a {
-    padding: 20px 20px;
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
 }
 
-#firstDropDown {
+.dropdownMenu.funz{
+    width: 800px;
+    background-color: red;
+}
+
+.dropdownMenu.abb{
+    background-color: blue;
+}
+
+.dropdownMenu.chiSiamo {
+    background-color: green;
+}
+
+.dropdownMenu.aiuto {
+    background-color: yellow;
+}
+
+.dropdownMenu.active {
+    display: block;
+}
+
+.wp-dropdown-menu-ul {
     display: flex;
     justify-content: space-around;
 }
 
-#firstDropDown ul li {
-    padding: 20px 0;
+.headerRight .dropdownMenu li {
+    padding: 15px 0;
 }
 
-.dropdownAbb ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dropdownAbb ul li {
-    padding: 20px 0;
-}
-
-.dropdownChiSiamo ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dropdownChiSiamo ul li {
-    padding: 20px 0;
-}
-
-.dropdownAiuto ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dropdownAiuto ul li {
-    padding: 20px 0;
-}
-
-/*dropdown*/
-
-.dropdownFunz {
-    width: 60%;
-    background-color: red;
-    position: absolute;
-    top: 80px;
-    left: 380px;
-    display: none;
-}
-
-.dropdownFunz.show {
-    display: block;
-}
-
-.dropdownAbb {
-    width: 10%;
-    height: 250px;
-    background-color: blue;
-    position: absolute;
-    top: 80px;
-    left: 780px;
-    display: none;
-}
-
-.dropdownAbb.show {
-    display: block;
-}
-
-.dropdownChiSiamo {
-    width: 10%;
-    background-color: green;
-    position: absolute;
-    top: 80px;
-    left: 940px;
-    display: none;
-}
-
-.dropdownChiSiamo.show {
-    display: block;
-}
-
-.dropdownAiuto {
-    width: 10%;
-    background-color: yellow;
-    position: absolute;
-    top: 80px;
-    left: 1000px;
-    display: none;
-}
-
-.dropdownAiuto.show {
-    display: block;
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .accediBTN {
-    border: none;
-    border-radius: 12px;
-    padding: 7px;
-    background: rgba(25, 28, 31, 0.133);
-    color: #000;
-    cursor: pointer;
+    background-color: #ddd;
 }
 
 .scaricaBTN {
-    border: none;
-    border-radius: 12px;
-    padding: 10px;
-    background: rgb(25, 28, 31);
-    color: #fff;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-
-    .headerRight ul li a {
-        padding: 20px 10px;
-    }
-
-    .accediBTN {
-        padding: 4px;
-    }
-    .scaricaBTN {
-        padding: 10px;
-    }
+    background-color: black;
+    color: white;
 }

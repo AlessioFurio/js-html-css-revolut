@@ -5,108 +5,148 @@
         <title>Revolut</title>
 
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js" charset="utf-8"></script>
+
     </head>
 
     <body>
         <header>
             <div class="container">
-
                 <div class="headerLeft">
-                    <div class="logo">
-                        <img src="logo.svg" alt="">
-                    </div>
-                    <a href="#">Personale</a>
-                    <a href="#">Business</a>
+                    <ul>
+                        <li>
+                            <div class="logo">
+                                <a href=""><img src="logo.svg" alt=""></a>
+                            </div>
+                        </li>
+                        <li><a href="#">Personale</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
                 </div>
-
                 <div class="headerRight">
                     <ul>
-                        <li id="funz"><a href="">Funzionalità</a></li>
-                        <li id="abb"><a href="">Abbonamenti</a></li>
-                        <li id="chiSiamo"><a href="">Chi siamo</a></li>
-                        <li id="aiuto"><a href="">Aiuto</a></li>
+                        <li class="dropdownItem">
+                            <a href="#">Funzionalità</a>
+                            <div class="dropdownMenu funz">
+                                <div class="wp-dropdown-menu-ul">
+                                    <ul>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                        <li><a href="">funz</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdownItem">
+                            <a href="#">Abbonamenti</a>
+                            <div class="dropdownMenu abb">
+                                <ul>
+                                    <li>
+                                        <a href="">abb</a>
+                                    </li>
+                                    <li>
+                                        <a href="">abb</a>
+                                    </li>
+                                    <li>
+                                        <a href="">abb</a>
+                                    </li>
+                                    <li>
+                                        <a href="">abb</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdownItem">
+                            <a href="#">Chi siamo</a>
+                            <div class="dropdownMenu chiSiamo">
+                                <ul>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">chi siamo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdownItem">
+                            <a href="#">Aiuto</a>
+                            <div class="dropdownMenu aiuto">
+                                <ul>
+                                    <li>
+                                        <a href="">aiuto</a>
+                                    </li>
+                                    <li>
+                                        <a href="">aiuto</a>
+                                    </li>
+                                    <li>
+                                        <a href="">aiuto</a>
+                                    </li>
+                                    <li>
+                                        <a href="">aiuto</a>
+                                    </li>
+                                    <li>
+                                        <a href="">aiuto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="btn accediBTN" href="#">Accedi</a>
+                        </li>
+                        <li>
+                            <a class="btn scaricaBTN" href="#">Scarica l'app</a>
+                        </li>
                     </ul>
-                    <div class="containerButtons">
-                        <button class="accediBTN" type="button" name="button">Accedi</button>
-                        <button class="scaricaBTN" type="button" name="button">Scarica l'App</button>
-                    </div>
                 </div>
-
-            </div>
-
-            <div class="menuDrop dropdownFunz">
-                <div id="firstDropDown">
-                    <ul>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                        <li><a href="">Funz</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menuDrop dropdownAbb">
-                <ul>
-                    <li><a href="">Abbonamenti</a></li>
-                    <li><a href="">Abbonamenti</a></li>
-                    <li><a href="">Abbonamenti</a></li>
-                    <li><a href="">Abbonamenti</a></li>
-                </ul>
-            </div>
-            <div class="menuDrop dropdownChiSiamo">
-                <ul>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                    <li><a href="">Chi Siamo</a></li>
-                </ul>
-            </div>
-            <div class="menuDrop dropdownAiuto">
-                <ul>
-                    <li><a href="">Aiuto</a></li>
-                    <li><a href="">Aiuto</a></li>
-                    <li><a href="">Aiuto</a></li>
-                    <li><a href="">Aiuto</a></li>
-                    <li><a href="">Aiuto</a></li>
-                </ul>
             </div>
         </header>
 
-
-
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
